@@ -1,0 +1,55 @@
+¿Cuáles son los 4 tipos de datos en Python?
+
+Strings, los datos que contienen son cadenas de caracteres. Ej: string_ejemplo = 'Este data type es un string'
+Boolean, los datos solo pueden tener dos valores true o false. Ej: boolean_ejemplo = False
+Float, los datos son números decimales Ej: float_ejemplo = 0.3
+Integer, los datos son números enteros. Ej: int_ejemplo = 5
+
+
+¿Qué tipo de convención de nomenclatura debemos usar para las variables en Python?
+
+Hay varias convenciones que se recogen en el manual de python PEP8.
+La recomendación a la hora de nombrar variables es que el nombre sea lo más descriptivo posible, breve y en letras minúslas utilizando guiones bajos para los espacios
+entre las palabras. 
+
+
+¿Qué es un heredoc de Python?
+
+Se llaman así a los strings de varias lineas, es decir, que están compuestos por un bloque de texto.
+El contenido se escribe entre tres comillas de apertura y tres comillas de cierre.
+
+
+¿Qué es la interpolación de cadenas?
+
+La interpolación de cadenas nos permite combinar valores de variables dentro de un string formando una nueva cadena.
+Hay dos métodos para hacerlo, f y .format().
+
+#método f
+nombre = "Mimi"
+edad = 21
+mensaje = f"Hola, me llamo {nombre} y tengo {edad} años."
+print(mensaje)
+>Hola, me llamo Mimi y tengo 21 años.
+
+#método .format()
+nombre = "Mumu"
+edad = 12
+mensaje_format = "Hola, me llamo {} y tengo {} años.".format(nombre, edad)
+print(mensaje)
+>Hola, me llamo Mumu y tengo 12 años.
+
+¿Cuándo debemos usar comentarios en Python?
+
+Cuando sea extrictamente necesario ya que el código debe entenderse por si mismo sin necesidad de información adicional.
+
+
+¿Cuáles son las diferencias entre las aplicaciones monolíticas y de microservicios?
+
+Las aplicaciones monolíticas se desarrollan y ejecutan como una única unidad, todas las funciones están integradas en un solo proceso y se ejecutan en un mismo entorno.
+
+Las aplicaciones de microservicios están divididas en pequeños servicios independientes.
+Trabajan cada función de forma independiente permitiendo hacer cambios sin comprometer el funcionamiento general de la aplicación.
+
+Aunque las aplicaciones monolíticas suelen ser más simples de desarrollar, las aplicaciones de microservicios son más flexibles.
+
+
