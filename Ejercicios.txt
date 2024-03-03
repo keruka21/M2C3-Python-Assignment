@@ -34,9 +34,12 @@ names_lista = names.split(',')
 Exercise 7: Get the first word from your string using indexes. Use the upper function to transform the letters into uppercase. 
 Create a new string that takes the uppercase word and the rest of the original string.
 
-primera_palabra = mi_string.split[0].upper()
-resto_del_string = mi_string[1:]
-nuevo_string = primera_palabra + resto_del_string
+mi_string = "Hello world"
+espacio_string= mi_string.find(' ')#después de la primera palabra tiene que haber un espacio
+primera_palabra = mi_string[:espacio_string].upper()#la primer palabra es todo lo que hay indexado hasta espacio_string y se convierte en mayúsculas
+resto_del_string = mi_string[espacio_string:] #el resto del string es lo que haya indexado desde espacio_string hasta el final
+nuevo_string = primera_palabra + resto_del_string #el nuevo string 
+print(nuevo_string)
 
 
 Exercise 8: Use string interpolation to print out a sentence that contains your number variable.
